@@ -1,0 +1,32 @@
+{
+  "data_source": "synthetic",
+  "evaluation_period": {
+    "start": "2024-08-07",
+    "end": "2024-12-30"
+  },
+  "feature_list": [
+    "LAG_1",
+    "LAG_7",
+    "ROLLING_MEAN_7",
+    "DAY_OF_WEEK",
+    "MONTH"
+  ],
+  "model": {
+    "name": "RandomForestRegressor",
+    "settings": {
+      "n_estimators": 250,
+      "random_state": 42
+    }
+  },
+  "random_seed": 42,
+  "model_metrics": {
+    "MAE": 22.588074246575275,
+    "RMSE": 28.144988606343485,
+    "WAPE": 0.09999741778514099
+  },
+  "naive_baseline_metrics": {
+    "MAE": 9.494657534246578,
+    "RMSE": 11.996531290906496,
+    "WAPE": 0.04203285440868614
+  }
+}
